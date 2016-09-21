@@ -4,13 +4,17 @@
 import sys 
 
 class Calculadora():
-    def plus (self, op1,op2):
-        return op1 + op2   
+	def plus (self, op1,op2):
+		return op1 + op2 
+	def minus (self, op1,op2):
+		return op1 - op2
 
 def resultado(operacion, op1, op2):
 	result=Calculadora()
 	if (operacion == "suma"):
 		total = result.plus(op1, op2)
+	elif (operacion == "resta"):
+		total = result.minus(op1,op2)
 	else:
 		sys.exit("Error: the operation is incorrect")
 	return total
