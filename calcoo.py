@@ -1,0 +1,27 @@
+#!/usr/bin/python3
+# -*- coding: utf-8 -*
+
+import sys 
+
+class Calculadora():
+    def plus (self, op1,op2):
+        return op1 + op2   
+
+def resultado(operacion, op1, op2):
+	result=Calculadora()
+	if (operacion == "suma"):
+		total = result.plus(op1, op2)
+	else:
+		sys.exit("Error: the operation is incorrect")
+	return total
+
+if __name__ == "__main__":
+
+	try:
+		op1 = float(sys.argv[1])
+		operacion = sys.argv[2]
+		op2 = float(sys.argv[3])
+	except ValueError:
+		sys.exit("Error: Non numerical parameters")
+	print(resultado(operacion,op1,op2))
+

@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 
-import sys #cuando te quieres comunicar con el sistema, hay muchas funciones
+import sys 
 
 
 def plus(op1, op2):
