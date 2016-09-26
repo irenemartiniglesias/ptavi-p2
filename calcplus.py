@@ -28,9 +28,9 @@ def resultado_fichero(fich):
 	
 if __name__== "__main__":
 	fichero = sys.argv[1]
-	fich = open(fichero)
-	resultado_fichero(fich)
-	fich.close()
+	documento = open(fichero)
+	resultado_fichero(documento)
+	documento.close()
 
 
 			
