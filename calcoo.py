@@ -14,7 +14,7 @@ class Calculadora():
         return op1 - op2
         
 
-def resultado(operacion, op1, op2):
+def result(operacion, op1, op2):
     if (operacion == "suma"):
         total = Calculadora().plus(op1, op2)
     elif (operacion == "resta"):
@@ -32,4 +32,4 @@ if __name__ == "__main__":
         op2 = float(sys.argv[3])
     except ValueError:
         sys.exit("Error: Non numerical parameters")
-    print(resultado(operacion,op1,op2))
+    print(result(operacion,op1,op2))
