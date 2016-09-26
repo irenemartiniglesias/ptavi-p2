@@ -32,14 +32,14 @@ if __name__ == "__main__":
         sys.exit("Error: Non numerical parameters")
 
     if sys.argv[2] == "suma":
-        result = plus(operando1, operando2)
+        solucion = plus(operando1, operando2)
     elif sys.argv[2] == "resta":
-        result = minus(operando1, operando2)
+        solucion = minus(operando1, operando2)
     elif sys.argv[2] == "multiplica":
-        result = multiply(operando1, operando2)
+        solucion = multiply(operando1, operando2)
     elif sys.argv[2] == "divide":
-        result = divide(operando1, operando2)
+        solucion = divide(operando1, operando2)
     else:
         sys.exit("Error: the operation is incorrect")
 
-    print(result)
+    print(solucion)
