@@ -27,16 +27,16 @@ class CalculadoraHija(Calculadora):
 
 def resultado(operacion, op1, op2):
     if (operacion == "suma"):
-        total = CalculadoraHija().plus(op1, op2)
+        resultado = CalculadoraHija().plus(op1, op2)
     elif (operacion == "resta"):
-        total = CalculadoraHija().minus(op1,op2)
+        resultado = CalculadoraHija().minus(op1,op2)
     elif (operacion == "multiplica"):
-        total = CalculadoraHija().multiply(op1,op2)
+        resultado = CalculadoraHija().multiply(op1,op2)
     elif (operacion == "divide"):
-        total = CalculadoraHija().divide(op1,op2)
+        resultado = CalculadoraHija().divide(op1,op2)
     else:
         sys.exit("Error: the operation is incorrect")
-    return total
+    return resultado
 
 
 if __name__ == "__main__":
